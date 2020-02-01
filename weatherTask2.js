@@ -2,11 +2,11 @@ const handlebars = require('handlebars');
 const fs = require('fs');
 
 // get your data into a variable
-const fooJson = require('./foo.json');
-const outFile = './finalreport.html';
+const fooJson = require('./weather.json');
+const outFile = './weatherreport.html';
 
 // read the file and use the callback to render
-fs.readFile('./source.hbs', function(err, data){
+fs.readFile('./weather.hbs', function(err, data){
   if (!err) {
     // make the buffer into a string
     const source = data.toString();

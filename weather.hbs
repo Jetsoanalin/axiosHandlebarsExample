@@ -1,0 +1,57 @@
+<table border = "2">
+<thead><tr><th title="Field #1">longitudes</th>
+<th title="Field #2">latitudes</th>
+<th title="Field #3">weather id</th>
+<th title="Field #4">weather main</th>
+<th title="Field #5">weather description</th>
+<th title="Field #6">weather icon</th>
+<th title="Field #7">base</th>
+<th title="Field #8">temp</th>
+<th title="Field #9">pressure</th>
+<th title="Field #10">humidity</th>
+<th title="Field #11">Min temp</th>
+<th title="Field #12">Max temp</th>
+<th title="Field #13">visibility</th>
+<th title="Field #14">wind speed</th>
+<th title="Field #15">wind degree</th>
+<th title="Field #16">clouds- all</th>
+<th title="Field #17">dt</th>
+<th title="Field #18">sys type</th>
+<th title="Field #19">sys id</th>
+<th title="Field #20">sys message</th>
+<th title="Field #21">sys country</th>
+<th title="Field #22">sys sunrise</th>
+<th title="Field #23">sys sunset</th>
+<th title="Field #24">id</th>
+<th title="Field #25">name</th>
+<th title="Field #26">cod</th>
+</tr></thead>
+<tbody><tr>
+<td align="right">{{this.coord.lon}}</td>
+<td align="right">{{this.coord.lat}}</td>
+<td align="right">{{this.weather.0.id}}</td>
+<td>{{this.weather.0.main}}</td>
+<td>{{this.weather.0.description}}</td>
+<td>{{this.weather.0.icon}}</td>
+<td>{{this.base}}</td>
+<td align="right">{{this.main.temp}}</td>
+<td align="right">{{this.main.pressure}}</td>
+<td align="right">{{this.main.humidity}}</td>
+<td align="right">{{this.main.temp_min}}</td>
+<td align="right">{{this.main.temp_max}}</td>
+<td align="right">{{this.visibility}}</td>
+<td align="right">{{this.wind.speed}}</td>
+<td align="right">{{this.wind.deg}}</td>
+<td align="right">{{this.clouds.all}}</td>
+<td align="right">{{this.dt}}</td>
+<td>{{this.sys.type}}</td>
+<td align="right">{{this.sys.id}}</td>
+<td align="right">{{this.sys.message}}</td>
+<td>{{this.sys.country}}</td>
+<td align="right">{{this.sys.sunrise}}</td>
+<td align="right">{{this.sys.sunset}}</td>
+<td align="right">{{this.id}}</td>
+<td>{{this.name}}</td>
+<td align="right">{{this.cod}}</td>
+</tr>
+</tbody></table>
