@@ -26,7 +26,7 @@ async function downloadJSON () {
 downloadJSON()  
 
 
-
+// Second Task if on first run its not working then comment the code below and run it again (because the above code needs time to save finalwork.json file)
 
 // get your data into a variable
 const inputJson = require('./finalwork.json');
