@@ -2,7 +2,7 @@
     <font face="verdana, sans-serif">
     <span style="box-sizing:border-box;font-weight:700;color:rgb(80,80,80);font-size:14px">
         <a href="https://openweathermap.org/city/2643743" style="color:rgb(233,110,80);box-sizing:border-box;background:0px 0px;text-decoration-line:none" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://openweathermap.org/city/2643743&amp;source=gmail&amp;ust=1580741694441000&amp;usg=AFQjCNEswXkhRnId5vWoXntDFG89zCFZcg">
-        London, GB
+        {{this.name}}, {{this.sys.country}}
         </a>
     </span>
     <span style="color:rgb(80,80,80);font-size:14px">
@@ -11,22 +11,22 @@
     <img src="https://ci5.googleusercontent.com/proxy/sys_KNOcA5XRdKWi2yH7AGqHG2jzQLmQYrKcbA-qZilbK0ZZu5sZc8sc4UfAokfrQzRtob_jUfwjEO92ED-zIg=s0-d-e1-ft#http://openweathermap.org/images/flags/gb.png" style="box-sizing:border-box;border:0px;vertical-align:middle;color:rgb(80,80,80);font-size:14px" class="CToWUd">
     <span style="box-sizing:border-box;font-weight:700;color:rgb(80,80,80);font-size:14px">
         <i style="box-sizing:border-box">
-            &nbsp;light intensity drizzle
+            &nbsp;{{this.weather.0.description}}
         </i>
     </span>
 </font>
 <p style="box-sizing:border-box;margin:0px 0px 10px;color:rgb(80,80,80);font-size:14px">
     <font face="verdana, sans-serif">
         <span style="box-sizing:border-box;display:inline-block;min-width:10px;padding:3px 7px;font-size:12px;font-weight:700;color:rgb(255,255,255);line-height:1;vertical-align:baseline;white-space:nowrap;text-align:center;background-color:rgb(78,77,74);border-radius:10px">
-            81°С
+            {{this.main.humidity}}°С
         </span>
-        &nbsp;temperature from 279.15 to 281.15 °С, wind 4.1 m/s. clouds 90 %, 1012 hPa
+        &nbsp;temperature from {{this.main.temp_min}} to {{this.main.temp_max}} °С, wind {{this.wind.speed}} m/s. clouds {{this.clouds.all}} %, {{this.main.pressure}} hPa
     </font>
 </p>
 <p style="box-sizing:border-box;margin:0px 0px 10px;color:rgb(80,80,80);font-size:14px">
     <font face="verdana, sans-serif">
-        Geo coords&nbsp;<a href="https://openweathermap.org/weathermap?zoom=12&amp;lat=51.51&amp;lon=-0.13" style="color:rgb(233,110,80);box-sizing:border-box;background:0px 0px;text-decoration-line:none" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://openweathermap.org/weathermap?zoom%3D12%26lat%3D51.51%26lon%3D-0.13&amp;source=gmail&amp;ust=1580741694441000&amp;usg=AFQjCNGGvCIuaDHV1OFhCwbO1UEcU4UEjw">
-            [51.51, -0.13]
+        Geo coords&nbsp;<a href="https://openweathermap.org/weathermap?zoom=12&amp;lat={{this.coord.lat}}&amp;lon={{this.coord.lon}}" style="color:rgb(233,110,80);box-sizing:border-box;background:0px 0px;text-decoration-line:none" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://openweathermap.org/weathermap?zoom%3D12%26lat%3D{{this.coord.lat}}%26lon%3D{{this.coord.lon}}&amp;source=gmail&amp;ust=1580741694441000&amp;usg=AFQjCNGGvCIuaDHV1OFhCwbO1UEcU4UEjw">
+            [{{this.coord.lat}}, {{this.coord.lon}}]
         </a>
     </font>
 </p>
