@@ -5,6 +5,7 @@
 2. json file is downloaded from the axios in task 1.
 3. html file is created after the 2nd task is completed which will  be the final output.
 
+`npm i` or `npm install`
 
 ## For Individual testing :
 
@@ -20,7 +21,7 @@ Step 2:
 
 ## For Final Showcase and to run both test at once :
 
-`node finalserver.js`
+`node finalserver.js` or `npm run start`
 
 1. You will be taken the template `finalweatheroutput.hbs` as a input
 2. When 1st function runs you will get `finalworks.json` as a output
